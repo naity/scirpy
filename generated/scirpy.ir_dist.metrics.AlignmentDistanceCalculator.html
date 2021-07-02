@@ -73,7 +73,7 @@
             
             
               <div class="version">
-                0.6.2.dev161
+                0.7.1
               </div>
             
           
@@ -124,6 +124,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ir-biology.html">Immune receptor (IR) model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Other versions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../zzz_bibliography.html">Bibliography</a></li>
 </ul>
 
@@ -206,9 +207,9 @@
 where <span class="math notranslate nohighlight">\(S_{1,2}\)</span> is the alignment score of sequences 1 and 2 and
 <span class="math notranslate nohighlight">\(S_{1,2}^{max}\)</span> is the max. achievable alignment score of sequences 1 and 2.
 <span class="math notranslate nohighlight">\(S_{1,2}^{max}\)</span> is defined as <span class="math notranslate nohighlight">\(\min(S_{1,1}, S_{2,2})\)</span>.</p>
-<p>The use of alignment-based distances is heavily inspired by <span id="id1">[<a class="reference internal" href="../zzz_bibliography.html#id6">DFGH+17</a>]</span>.</p>
+<p>The use of alignment-based distances is heavily inspired by <span id="id1">[<a class="reference internal" href="../zzz_bibliography.html#id6" title="Pradyot Dash, Andrew J. Fiore-Gartland, Tomer Hertz, George C. Wang, Shalini Sharma, Aisha Souquette, Jeremy Chase Crawford, E. Bridie Clemens, Thi H. O. Nguyen, Katherine Kedzierska, Nicole L. La Gruta, Philip Bradley, and Paul G. Thomas. Quantifiable predictive features define epitope-specific t cell receptor repertoires. Nature, 547(7661):89–93, June 2017. URL: https://doi.org/10.1038/nature22383, doi:10.1038/nature22383.">DFGH+17</a>]</span>.</p>
 <p>High-performance sequence alignments are calculated leveraging
-the <a class="reference external" href="https://github.com/jeffdaily/parasail-python">parasail library</a> (<span id="id2">[<a class="reference internal" href="../zzz_bibliography.html#id17">Dai16</a>]</span>).</p>
+the <a class="reference external" href="https://github.com/jeffdaily/parasail-python">parasail library</a> (<span id="id2">[<a class="reference internal" href="../zzz_bibliography.html#id17" title="Jeff Daily. Parasail: SIMD c library for global, semi-global, and local pairwise sequence alignments. BMC Bioinformatics, February 2016. URL: https://doi.org/10.1186/s12859-016-0930-z, doi:10.1186/s12859-016-0930-z.">Dai16</a>]</span>).</p>
 <dl>
 <dt>Choosing a cutoff:</dt><dd><p>Alignment distances need to be viewed in the light of the substitution matrix.
 The alignment distance is the difference between the actual alignment

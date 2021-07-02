@@ -73,7 +73,7 @@
             
             
               <div class="version">
-                0.6.2.dev161
+                0.7.1
               </div>
             
           
@@ -108,6 +108,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Other versions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="zzz_bibliography.html">Bibliography</a></li>
 </ul>
 
@@ -192,20 +193,20 @@ and 2 regions to be the same.</p>
 <section id="dual-tcrs-and-allelically-included-b-cells">
 <h2>Dual TCRs and allelically included B cells<a class="headerlink" href="#dual-tcrs-and-allelically-included-b-cells" title="Permalink to this headline">¶</a></h2>
 <p>Contrary to what would be expected based on the previously described
-mechanism of allelic exclusion (<span id="id1">[<a class="reference internal" href="zzz_bibliography.html#id7">BSB10</a>]</span>), scRNA-seq datasets can
+mechanism of allelic exclusion (<span id="id1">[<a class="reference internal" href="zzz_bibliography.html#id7" title="Brenna L Brady, Natalie C Steinel, and Craig H Bassing. Antigen receptor allelic exclusion: an update and reappraisal. J. Immunol., 185(7):3801–3808, October 2010.">BSB10</a>]</span>), scRNA-seq datasets can
 feature a considerable number of cells with more than one pair of
 <a class="reference internal" href="glossary.html#term-V-D-J"><span class="xref std std-term">VJ</span></a> and <a class="reference internal" href="glossary.html#term-V-D-J"><span class="xref std std-term">VDJ</span></a> chains. Since cells with more than
 one productive CDR3 sequence for each chain did not fit into our
 understanding of adaptive immune cell biology, most TCR analysis tools ignore
-these cells (<span id="id2">[<a class="reference internal" href="zzz_bibliography.html#id9">FWST19</a>]</span>, <span id="id3">[<a class="reference internal" href="zzz_bibliography.html#id10">ZYZ+18</a>]</span>), or select the CDR3
-sequence with the highest expression level (<span id="id4">[<a class="reference internal" href="zzz_bibliography.html#id8">AYB+17</a>]</span>). While in
+these cells (<span id="id2">[<a class="reference internal" href="zzz_bibliography.html#id9" title="David S. Fischer, Yihan Wu, Benjamin Schubert, and Fabian J. Theis. Predicting antigen-specificity of single t-cells based on TCR CDR3 regions. BioRxiv, August 2019. URL: https://doi.org/10.1101/734053, doi:10.1101/734053.">FWST19</a>]</span>, <span id="id3">[<a class="reference internal" href="zzz_bibliography.html#id10" title="Lei Zhang, Xin Yu, Liangtao Zheng, Yuanyuan Zhang, Yansen Li, Qiao Fang, Ranran Gao, Boxi Kang, Qiming Zhang, Julie Y Huang, Hiroyasu Konno, Xinyi Guo, Yingjiang Ye, Songyuan Gao, Shan Wang, Xueda Hu, Xianwen Ren, Zhanlong Shen, Wenjun Ouyang, and Zemin Zhang. Lineage tracking reveals dynamic relationships of T cells in colorectal cancer. Nature, 564(7735):268–272, December 2018.">ZYZ+18</a>]</span>), or select the CDR3
+sequence with the highest expression level (<span id="id4">[<a class="reference internal" href="zzz_bibliography.html#id8" title="Shaked Afik, Kathleen B Yates, Kevin Bi, Samuel Darko, Jernej Godec, Ulrike Gerdemann, Leo Swadling, Daniel C Douek, Paul Klenerman, Eleanor J Barnes, Arlene H Sharpe, W Nicholas Haining, and Nir Yosef. Targeted reconstruction of T cell receptor sequence from single cell RNA-seq links CDR3 length to T cell differentiation state. Nucleic Acids Res., 45(16):e148, September 2017.">AYB+17</a>]</span>). While in
 some cases these cells might represent artifacts (e.g. doublets of a CD8+ and
 a CD4+ T cell engaged in an immunological synapse), there is an increasing
 amount of evidence in support of a bone fide <a class="reference internal" href="glossary.html#term-Dual-IR"><span class="xref std std-term">Dual IR</span></a> population
-(<span id="id5">[<a class="reference internal" href="zzz_bibliography.html#id5">SB19</a>]</span>, <span id="id6">[<a class="reference internal" href="zzz_bibliography.html#id11">JPG10</a>]</span>, <span id="id7">[<a class="reference internal" href="zzz_bibliography.html#id3">VS10</a>]</span>).</p>
+(<span id="id5">[<a class="reference internal" href="zzz_bibliography.html#id5" title="Nathaniel J. Schuldt and Bryce A. Binstadt. Dual TCR t cells: identity crisis or multitaskers? The Journal of Immunology, 202(3):637–644, January 2019. URL: https://doi.org/10.4049/jimmunol.1800904, doi:10.4049/jimmunol.1800904.">SB19</a>]</span>, <span id="id6">[<a class="reference internal" href="zzz_bibliography.html#id11" title="Qingyong Ji, Antoine Perchellet, and Joan M Goverman. Viral infection triggers central nervous system autoimmunity via activation of CD8+ T cells expressing dual TCRs. Nat. Immunol., 11(7):628–634, July 2010.">JPG10</a>]</span>, <span id="id7">[<a class="reference internal" href="zzz_bibliography.html#id3" title="Christian Vettermann and Mark S. Schlissel. Allelic exclusion of immunoglobulin genes: models and mechanisms. Immunological Reviews, 237(1):22–42, August 2010. URL: https://doi.org/10.1111/j.1600-065x.2010.00935.x, doi:10.1111/j.1600-065x.2010.00935.x.">VS10</a>]</span>).</p>
 <p>Scirpy allows investigating the composition and phenotypes of both single-
 and dual-IR cells by leveraging a immune cell model similar to the one
-proposed in <span id="id8">[<a class="reference internal" href="zzz_bibliography.html#id12">SLonnbergP+16</a>]</span>, where immune cells are allowed to
+proposed in <span id="id8">[<a class="reference internal" href="zzz_bibliography.html#id12" title="Michael J T Stubbington, Tapio Lönnberg, Valentina Proserpio, Simon Clare, Anneliese O Speak, Gordon Dougan, and Sarah A Teichmann. T cell fate and clonality inference from single-cell transcriptomes. Nat. Methods, 13(4):329–332, April 2016.">SLonnbergP+16</a>]</span>, where immune cells are allowed to
 have a primary and a secondary pair of <a class="reference internal" href="glossary.html#term-V-D-J"><span class="xref std std-term">VJ</span></a> and
 <a class="reference internal" href="glossary.html#term-V-D-J"><span class="xref std std-term">VDJ</span></a> chains. For each cell, the primary pair consists of the VJ-
 and VDJ-chain with the highest read count. Likewise, the secondary pair is the
@@ -227,8 +228,8 @@ based on</p>
 <li><p><em>similar CDR3 amino acid sequences</em> based on pairwise sequence alignment.</p></li>
 </ul>
 <p>The latter approach is inspired by studies showing that similar TCR sequences
-also share epitope targets (<span id="id9">[<a class="reference internal" href="zzz_bibliography.html#id9">FWST19</a>]</span>, <span id="id10">[<a class="reference internal" href="zzz_bibliography.html#id13">GHN+17</a>]</span>,
-<span id="id11">[<a class="reference internal" href="zzz_bibliography.html#id6">DFGH+17</a>]</span>). Based on these approaches, Scirpy constructs a global,
+also share epitope targets (<span id="id9">[<a class="reference internal" href="zzz_bibliography.html#id9" title="David S. Fischer, Yihan Wu, Benjamin Schubert, and Fabian J. Theis. Predicting antigen-specificity of single t-cells based on TCR CDR3 regions. BioRxiv, August 2019. URL: https://doi.org/10.1101/734053, doi:10.1101/734053.">FWST19</a>]</span>, <span id="id10">[<a class="reference internal" href="zzz_bibliography.html#id13" title="Jacob Glanville, Huang Huang, Allison Nau, Olivia Hatton, Lisa E Wagar, Florian Rubelt, Xuhuai Ji, Arnold Han, Sheri M Krams, Christina Pettus, Nikhil Haas, Cecilia S Lindestam Arlehamn, Alessandro Sette, Scott D Boyd, Thomas J Scriba, Olivia M Martinez, and Mark M Davis. Identifying specificity groups in the T cell receptor repertoire. Nature, 547(7661):94–98, July 2017.">GHN+17</a>]</span>,
+<span id="id11">[<a class="reference internal" href="zzz_bibliography.html#id6" title="Pradyot Dash, Andrew J. Fiore-Gartland, Tomer Hertz, George C. Wang, Shalini Sharma, Aisha Souquette, Jeremy Chase Crawford, E. Bridie Clemens, Thi H. O. Nguyen, Katherine Kedzierska, Nicole L. La Gruta, Philip Bradley, and Paul G. Thomas. Quantifiable predictive features define epitope-specific t cell receptor repertoires. Nature, 547(7661):89–93, June 2017. URL: https://doi.org/10.1038/nature22383, doi:10.1038/nature22383.">DFGH+17</a>]</span>). Based on these approaches, Scirpy constructs a global,
 epitope-focused cell similarity network. While convergence of the
 nucleotide-based clonotype definition to the amino acid based one hints at
 selection pressure, sequence alignment based networks offer the opportunity
